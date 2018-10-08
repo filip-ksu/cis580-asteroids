@@ -1,0 +1,78 @@
+:root {
+    --bg-dark: #263238;
+    --bg-light: #eceff1;
+    --text-light: #ffffff;
+    --text-dark: rgba(0, 0, 0, 0.87);
+
+    --color-blue: #2196f3;
+    --color-red: #f44336;
+    --color-green: #4caf50;
+    --color-yellow: #ffeb3b;
+}
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1;
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto
+}
+
+header,
+main,
+footer {
+    padding: 1em;
+}
+
+main {
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+}
+
+footer {
+    text-align: center;
+}
+
+header h1 {
+    float: left;
+    margin: 0.25em 0.5em 0 0;
+}
+
+header p {
+    float: right;
+    text-align: right;
+    margin-left: 1em;
+}
+
+main > * {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+/*----------------------------------------------------------------------------*/
+#menu {
+    text-align: center;
+}
+
+#btn-new-game {
+    font: inherit;
+    box-sizing: content-box;
+    cursor: pointer;
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    font-size: 1em;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 0.5em;
+}
+
+canvas {
+    display: block;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #000000;
+}
